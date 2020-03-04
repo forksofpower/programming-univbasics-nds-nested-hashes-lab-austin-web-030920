@@ -28,7 +28,8 @@ def aoh_lookup(aoh, row, key)
   #     return value
   #   end
   # end
-  aoh[row].each { |k, v| return v if k == key }
+  aoh[row][key]
+  # aoh[row].each { |k, v| return v if k == key }
 end
 
 def aoh_update(aoh, row, key, new_value)
