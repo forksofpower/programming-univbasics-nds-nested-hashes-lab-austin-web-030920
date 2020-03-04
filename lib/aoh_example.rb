@@ -23,12 +23,12 @@ def literal_aoh
 end
 
 def aoh_lookup(aoh, row, key)
-  aoh[row].each do |attribute, value|
-    if attribute == key
-      return value
-    end
-  end
-  # aoh[row].each { |k, v| v if k == key }
+  # aoh[row].each do |attribute, value|
+  #   if attribute == key
+  #     return value
+  #   end
+  # end
+  aoh[row].each { |k, v| v if k == key }
 end
 
 def aoh_update(aoh, row, key, new_value)
