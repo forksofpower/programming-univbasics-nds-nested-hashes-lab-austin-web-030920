@@ -23,11 +23,6 @@ def literal_aoh
 end
 
 def aoh_lookup(aoh, row, key)
-  # aoh[row].each do |attribute, value|
-  #   if attribute == key
-  #     return value
-  #   end
-  # end
   aoh[row][key]
 end
 
